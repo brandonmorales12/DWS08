@@ -1,6 +1,21 @@
+<link rel="stylesheet" href="common.css">
 <link rel="stylesheet" href="/components/footer/footer.css">
-<footer class="container-fluid text-center fixed-bottom">
-&copy; <?php print date("Y");?>
+
+<footer class="container-fluid text-center fixed-bottom d-flex justify-content-between align-items-center">
+  <div class="footer-left">
+    <a href="#">Enlace 1</a>
+    <a href="#">Enlace 2</a>
+    <a href="#">Enlace 3</a>
+  </div>
+  <div class="footer-center">
+    &copy; <?php print date("Y");?>
+  </div>
+  <div class="footer-right">
+    <a href="#">Enlace 4</a>
+    <a href="#">Enlace 5</a>
+    <a href="#">Enlace 6</a>
+  </div>
+</footer>
 
 
 <!-- Optional JavaScript -->

@@ -13,6 +13,7 @@
       <hr>
       <h3>Test</h3>
       <p>Lorem ipsum...</p>
+      <a href="../../src/contact.php">PRUEBA</a>
     </div>
     <div class="col-sm-2 sidenav h-auto">
       <div class="well">

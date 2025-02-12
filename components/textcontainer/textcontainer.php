@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/components/textcontainer/textcontainer.css">
 
-<div class="container-fluid text-center h-auto">    
-  <div class="row content">
+<div class="container-fluid text-center vh-90">    
+  <div class="row content h-auto">
     <div class="col-sm-2 sidenav h-auto">
       <p><a href="#">Link</a></p>
       <p><a href="#">Link</a></p>

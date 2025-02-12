@@ -12,6 +12,5 @@
 	<?php include("components/textcontainer/textcontainer.php");?>
 
 	<?php include("components/footer/footer.php");?>
-	<img src="/assets/img_parallax.jpg" alt="" srcset="">
 </body>
 </html>

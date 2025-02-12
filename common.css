@@ -1,6 +1,34 @@
 /* Global variables */
 
+html, 
+body {
+  height: 100vh;
+  padding: 0;
+}
+
+
 :root {
-  --blue: #1e90ff;
-  --white: #ffffff;
+  --primary-1: #6D929F;
+  --primary-2: #467384;
+  --primary-3: #28586B;
+  --primary-4: #124051;
+  --primary-5: #032836;
+
+  --secondary-1: #7C84AE;
+  --secondary-2: #525C90;
+  --secondary-3: #323C74;
+  --secondary-4: #1A2358;
+  --secondary-5: #08103B;
+
+  --terciary-1: #7CB892;
+  --terciary-2: #4E996A;
+  --terciary-3: #2A7B49;
+  --terciary-4: #115E2E;
+  --terciary-5: #013F18;
+
+  --complement-1: #FED6AB;
+  --complement-2: #D3A16B;
+  --complement-3: #AA743A;
+  --complement-4: #814F18;
+  --complement-5: #572E01;
 }

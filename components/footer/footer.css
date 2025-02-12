@@ -1,7 +1,7 @@
     /* Set black background color, white text and some padding */
     footer {
-      background-color: #555;
-      color: white;
+      background-color: var(--primary-5);
+      color: var(--primary-1);
       padding: 15px;
       display: flex;
       justify-content: space-between;
@@ -10,7 +10,7 @@
   }
   
   footer a {
-      color: white;
+      color: var(--terciary-1);
       margin: 0 10px;
       text-decoration: none;
   }

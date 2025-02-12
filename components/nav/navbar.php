@@ -28,3 +28,6 @@
     </div>
   </div>
 </nav>
+
+<!-- JS imports -->
+<script src="/components/nav/navbar.js"></script> 

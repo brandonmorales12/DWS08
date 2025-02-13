@@ -17,3 +17,14 @@
     padding-top: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+
+  .formulario {
+    margin: 3em;
+  }
+
+  .register-card {
+    background-color: var(--primary-4);
+    color: var(--primary-1);
+  }
+
+  

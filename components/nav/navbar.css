@@ -2,36 +2,36 @@
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
-    }
-
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
+      overflow: hidden;
+      background-color: var(--primary-5);
     }
     
-    /* Set gray background color and 100% height */
     .navbar-header {
       padding-top: 20px;
-      background-color: #f1f1f1;
+      background-color: var(--primary-1);
       height: 100%;
     }
     
-    /* Set gray background color and 100% height */
+    .nav-item {
+      padding: 10px;
+      font-size: 1.5em;
+    }
+
     .navbar-brand {
-      padding-top: 20px;
-      background-color: #f1f1f1;
+      /* background-color: black; */
       height: 100%;
     }
         
+    .logo-img {
+      max-width: 150px;
+    }
 
+    #registro {
+      border-color: var(--terciary-5);
+      background-color: var(--terciary-3);
+    }
 
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
+    #login {
+      border-color: var(--complement-5);
+      background-color: var(--complement-3);
     }

@@ -12,6 +12,7 @@
 			$CURRENT_PAGE = "Index";
 			$PAGE_TITLE = "Welcome to my homepage!";
 	}
+
 	$host = '127.0.0.1';
 	$db = 'RAICES_TFG';
 	$user = 'root';

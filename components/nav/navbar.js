@@ -3,19 +3,20 @@ const navbar_alumno = document.getElementById("navbar-alumno");
 const navbar_invitado = document.getElementById("navbar-invitado");
 
 function goToNewPage(page_url) {
+    console.log(page_url);
     try {
-    window.location.replace(page_url);        
+        window.location.replace(page_url);        
     } catch (error) {
     throw new Error("No se ha podido ir a la página");
     }
 }
 
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
 function navbarChanges(active) {
-
-    console.log(navbar_profes);
-    console.log(navbar_alumno);
-    console.log(navbar_invitado);
-
     if(active == "alumno"){
         navbar_profes.hidden = true;
         navbar_alumno.hidden = false;

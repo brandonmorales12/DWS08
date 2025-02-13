@@ -1,13 +1,13 @@
 <link rel="stylesheet" href="/components/textcontainer/textcontainer.css">
 
-<div class="container-fluid text-center vh-90">    
-  <div class="row content h-auto">
-    <div class="col-sm-2 sidenav h-auto">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+<div class="text-container">
+  <!-- div que contiene la fila??? -->
+  <div class="row content h-100 text-center">
+    <!-- columna izquierda -->
+    <div class="sidetext col-2 h-auto">
     </div>
-    <div class="col-sm-8 text-left h-auto"> 
+    <!-- columna central -->
+    <div class="centertext col-8 text-left h-auto"> 
       <h1>Welcome</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <hr>
@@ -15,13 +15,9 @@
       <p>Lorem ipsum...</p>
       <a href="../../src/contact.php">PRUEBA</a>
     </div>
-    <div class="col-sm-2 sidenav h-auto">
-      <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
-      </div>
+    <!-- columna derecha -->
+    <div class="col-2 sidetext h-auto">
     </div>
+
   </div>
 </div>

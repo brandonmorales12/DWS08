@@ -4,51 +4,52 @@
 <!-- Component -->
 <nav class="navbar navbar-expand-sm navbar-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:goToNewPage(/index.php);"><img class="logo-img"src="/assets/logoRAICES_transparente.png" alt="Logo"></a>
+  <!-- Logo -->  
+  <a class="navbar-brand" href="javascript:topFunction();"><img class="logo-img"src="/assets/logoRAICES_transparente.png" alt="Logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="mynavbar">
+      <!-- Lo que muestra si alumno -->  
       <div id="navbar-alumno" class="navbar-alumno navbar-nav me-auto">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:goToNewPage(/index.php);">Link1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link1</a>
-        </li>
-      </ul>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:goToNewPage('/index.php');">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:goToNewPage('/index.php');">Mis faltas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:goToNewPage('/index.php');">Mis profesores</a>
+          </li>
+        </ul>
       </div>
+      <!-- Lo que muestra si profesor -->
       <div id="navbar-profesor" class="navbar-nav me-auto">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link2</a>
-        </li>
-      </ul>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:goToNewPage('/index.php');">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:goToNewPage('/index.php');">Mis asignaturas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:goToNewPage('/index.php');">Mis alumnos</a>
+          </li>
+        </ul>
       </div>
+      <!-- Lo que muestra si invitado -->
       <div id="navbar-invitado" class="navbar-alumno navbar-nav me-auto">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:goToNewPage(/index.php);">Link3</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link3</a>
-        </li>
-      </ul>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="javascript:goToNewPage('/index.php');">Inicio</a>
+          </li>
+        </ul>
       </div>
       <div class="d-flex justified">
         <!-- <input class="form-control me-2" type="text" placeholder="Search"> -->
-        <button class="btn btn-primary me-2" type="button">Registrarse</button>
-		    <button class="btn btn-primary" type="button">Log In</button>
+        <button id="registro" class="btn btn-primary me-2" type="button">Registrarse</button>
+		    <button id="login" class="btn btn-primary" type="button">Log In</button>
 		</div>
     </div>
   </div>

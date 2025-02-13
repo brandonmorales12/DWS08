@@ -12,6 +12,11 @@
       height: 100%;
     }
     
+    .nav-item {
+      padding: 10px;
+      font-size: 1.5em;
+    }
+
     .navbar-brand {
       /* background-color: black; */
       height: 100%;
@@ -19,4 +24,14 @@
         
     .logo-img {
       max-width: 100px;
+    }
+
+    #registro {
+      border-color: var(--terciary-5);
+      background-color: var(--terciary-3);
+    }
+
+    #login {
+      border-color: var(--complement-5);
+      background-color: var(--complement-3);
     }

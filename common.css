@@ -8,7 +8,7 @@ body {
 
 
 :root {
-  --primary-1: #6D929F;
+  --primary-1: #c8e9f5;
   --primary-2: #467384;
   --primary-3: #28586B;
   --primary-4: #124051;
@@ -31,4 +31,12 @@ body {
   --complement-3: #AA743A;
   --complement-4: #814F18;
   --complement-5: #572E01;
+
+  --fondo1: url(/assets/img_parallax.jpg);
+  --fondo2: url(/assets/img_parallax2.jpg);
+  --fondo3: url(/assets/img_parallax3.jpg) ; 
+
+  --logo-transp: url(/assets/logoRAICES_transparente.png);
+  --logo-blanco: url(/assets/logoRAICES_blanco.png);
+  --logo-negro: url(/assets/logoRAICES_negro.png);
 }

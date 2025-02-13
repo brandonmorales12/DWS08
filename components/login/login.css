@@ -1,92 +1,67 @@
-.ezy__signin16_4DHM2rRT {
-    /* Bootstrap variables */
-    --bs-body-color: #333b7b;
-    --bs-body-bg: rgb(255, 255, 255);
+/* Estilos generales */
+.sidenav {
+  background-color: #f9f9f9;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-    /* Easy Frontend variables */
-    --ezy-theme-color: rgb(13, 110, 253);
-    --ezy-theme-color-rgb: 13, 110, 253;
+.sidenav a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    background-image: url(https://cdn.easyfrontend.com/pictures/background/background3.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-    padding: 120px 0;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
+.sidenav a:hover {
+  text-decoration: underline;
+}
 
-  @media (min-width: 991px) {
-    .ezy__signin16_4DHM2rRT {
-      padding: 200px 0;
-    }
-  }
+.well {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
-  .ezy__signin16_4DHM2rRT-heading {
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 1;
-  }
+/* Estilos para el contenedor del formulario */
+.form-container {
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
-  .ezy__signin16_4DHM2rRT-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, #005bea, #00c6fb);
-    opacity: 0.8;
-    z-index: -1;
-  }
+.form-group {
+  text-align: left;
+}
 
-  .ezy__signin16_4DHM2rRT-user-img {
-    width: 100px;
+.form-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .sidenav {
     height: auto;
-  }
-  /* form */
-
-  .ezy__signin16_4DHM2rRT .form-control {
-    min-height: 48px;
-    line-height: 45px;
-    background-color: #fff;
-    color: rgba(22, 22, 22, 0.75);
-    border: 0;
-    border-radius: 100px;
-    padding: 0 25px;
-    font-weight: 700;
-  }
-  .ezy__signin16_4DHM2rRT .form-control::placeholder {
-    font-size: 16px;
-    font-weight: 700;
-  }
-  .ezy__signin16_4DHM2rRT .form-control:focus {
-    border-color: var(--ezy-theme-color);
-  }
-  /* btn */
-  .ezy__signin16_4DHM2rRT-btn {
-    height: 48px;
-    padding: 10px 30px;
-    font-weight: 600;
-    font-size: 16;
-    line-height: 1.4;
-    background-color: var(--ezy-theme-color);
-    color: #ffffff;
-    border-radius: 100px;
+    padding: 10px;
   }
 
-  .ezy__signin16_4DHM2rRT-btn:hover {
-    color: #ffffff;
-    background-color: rgba(var(--ezy-theme-color-rgb), 0.9);
+  .well {
+    margin-bottom: 5px;
   }
-  .ezy__signin16_4DHM2rRT a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    transition: 0.35s;
-  }
-  .ezy__signin16_4DHM2rRT a:hover {
-    color: var(--ezy-theme-color);
-    font-size: 18px;
-  }
+}

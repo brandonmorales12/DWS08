@@ -7,6 +7,7 @@ function goToNewPage(page_url) {
     try {
         window.location.replace(page_url);        
     } catch (error) {
+        window.location.replace('../../src/404.php');
     throw new Error("No se ha podido ir a la página");
     }
 }

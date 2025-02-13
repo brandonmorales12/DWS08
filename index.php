@@ -4,7 +4,6 @@
 <head>
 	<?php include("includes/head-tag-contents.php");?>
 	<?php include("includes/bootstrap5.php");?>
-	<link rel="stylesheet" href="common.css">
 	<?php header('Location: /src/landing.php');?>
 </head>
 <body></body>

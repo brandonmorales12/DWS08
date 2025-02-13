@@ -9,7 +9,7 @@
 <body>
 	<?php include("components/nav/navbar.php");?>
 
-	<?php include("components/...textcontainer/textcontainer.php");?>
+	<?php include("components/textcontainer/textcontainer.php");?>
 
 	<?php include("components/footer/footer.php");?>
 </body>

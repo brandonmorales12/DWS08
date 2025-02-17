@@ -1,21 +1,20 @@
 <?php
 session_start();
-include("includes/config.php");
+include '../../includes/dbconfig.php';
 
-// Obtener los datos del formulario
-$username = $_POST['username'];
-$password = $_POST['password'];
+$data = json_decode(file_get_contents("php://input"), true);
+$email = $data['email'];
+$password = $data['password'];
 
-// Consulta para verificar las credenciales del usuario
-$query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-$result = mysqli_query($conn, $query);
+$sql = "SELECT * FROM users WHERE email = ?";
+$stmt = $pdo->prepare($sql);
+$stmt->execute([$email]);
+$user = $stmt->fetch();
 
-if (mysqli_num_rows($result) == 1) {
-    // Usuario autenticado correctamente
-    $_SESSION['username'] = $username;
-    header("Location: dashboard.php");
+if ($user && password_verify($password, $user['password'])) {
+    $_SESSION['user_id'] = $user['id'];
+    echo json_encode(["message" => "Login exitoso"]);
 } else {
-    // Credenciales incorrectas
-    echo "Username or password is incorrect.";
+    echo json_encode(["error" => "Email o contraseña incorrectos"]);
 }
 ?>

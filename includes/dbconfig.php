@@ -1,8 +1,8 @@
 <?php
 $host = '127.0.0.1';
-	$db = 'pratica';
-	$user = 'usu';
-	$pass = 'usu';
+$db = 'RAICES_TFG';
+$user = 'root';
+$pass = 'Tokio2324';
 	
 	try {
 		$pdo = new PDO("mysql:host=$host;port=3306;dbname=$db;charset=utf8", $user, $pass);

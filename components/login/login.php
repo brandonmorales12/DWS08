@@ -3,12 +3,42 @@
 <div class="container-fluid text-center h-auto">    
   <div class="row content">
     <div class="col-sm-2 sidenav h-auto">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+      
     </div>
+    
     <div class="col-sm-8 text-left h-auto"> 
     
+          <div class="form-container">
+        <h2>Regístrate</h2>
+        
+        <?php if (isset($error)): ?>
+        <p style="color: red;"><?php echo htmlspecialchars($error); ?></p>
+    <?php endif; ?>
+
+    <form id="loginForm" action="authenticate.php" method="POST">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" name="correo" id="correo" required>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" name="password" id="password" required>
+
+        <button type="submit">Iniciar Sesión</button>
+        <p><a href="register.php">¿No tienes cuenta? Regístrate aquí.</a></p>
+
+    </form>
+
+    </div>
+    <div class="col-sm-2 sidenav h-auto">
+      <div class="well">
+      
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 
           <div class="form-container">
         <h2>Regístrate</h2>
         <form action="login.php" method="post">
@@ -26,15 +56,4 @@
 
           <a href="#" class="d-block mt-3 text-primary text-decoration-none">¿Ya tienes cuenta? Inicia sesión aquí</a>
         </form>
-
-    </div>
-    <div class="col-sm-2 sidenav h-auto">
-      <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
-      </div>
-    </div>
-  </div>
-</div>
+ -->

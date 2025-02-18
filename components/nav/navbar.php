@@ -58,8 +58,11 @@
 <!-- JS imports -->
 <script src="../components/nav/navbar.js"></script> 
 <?php 
-if($_SESSION)
+if(!(session_id() == '' || !isset($_SESSION) || session_status() === PHP_SESSION_NONE))
+{
+// session IS started
 $tipo_usuario = $_SESSION["tipo_usuario"];
+}
 else $tipo_usuario = "invitado";
-echo "<script type=\"text/javascript\"> navbarChanges(\"{$tipo_usuario}\"); </script>";
+print "<script type=\"text/javascript\"> navbarChanges(\"{$tipo_usuario}\"); </script>";
 ?>

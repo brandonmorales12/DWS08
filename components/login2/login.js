@@ -28,6 +28,7 @@ loginAlumno.addEventListener('click', async (event) => {
     const result = await response.json();
     if (result.userId) {
       localStorage.setItem('userId', result.userId); // Almacena el ID de usuario
+      localStorage.setItem('userType', userType); // Almacena el TIPO de usuario
     }else{
       console.log("Usuario no encontrado");
     }
@@ -56,6 +57,7 @@ loginProfesor.addEventListener('click', async (event) => {
   const result = await response.json();
   if (result.userId) {
       localStorage.setItem('userId', result.userId); // Almacena el ID de usuario
+      localStorage.setItem('userType', userType); // Almacena el TIPO de usuario
     }else{
       console.log("Usuario no encontrado");
     }

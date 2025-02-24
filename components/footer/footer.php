@@ -12,7 +12,6 @@
     <a target="_blank" href="https://campusmadrid.csod.com/client/campusmadrid/default.aspx">Formación</a>
     <a target="_blank" href="https://raices.educa.madrid.org/">Canal Raíces</a>
   </div>
-</footer>
 
 
 <!-- JS imports -->

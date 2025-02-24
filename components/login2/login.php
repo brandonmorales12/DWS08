@@ -8,7 +8,7 @@
     </div>
     <!-- columna central -->
     <div class="centertext col-8 text-left h-auto"> 
-      <h1>Registro</h1>
+      <h1>Log IN</h1>
       <hr>  
     <!-- Formulario -->
       <form id="loginForm">

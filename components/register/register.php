@@ -11,30 +11,39 @@
       <h1>Registro</h1>
       <hr>  
     <!-- Formulario -->
-      <form>
+      <form id="registerForm">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="nombre" class="form-control" id="registerNombre" aria-describedby="nombreHelp">
         </div>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <label for="apellido" class="form-label">Apellido</label>
+          <input type="apellido" class="form-control" id="registerApellido" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <label for="DNI" class="form-label">DNI</label>
+          <input type="DNI" class="form-control" id="registerDNI" aria-describedby="emailHelp">
         </div>
-          <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="registerPassword">
         </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" value="Alumno" id="registerAlumno">
+          <label class="form-check-label" for="registerAlumno">
+            Alumno
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" value="Profesor" id="registerProfesor" checked>
+          <label class="form-check-label" for="registerProfesor">
+            Profesor
+          </label>
+        </div>
+        <div class="mb-3">
+          <button type="submit" id="registroEnviar" class="btn btn-primary">Enviar</button>
+        </div>
+        </form>
     </div>
     
     <!-- columna derecha -->

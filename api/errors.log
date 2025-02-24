@@ -1,0 +1,112 @@
+[24-Feb-2025 11:38:20 UTC] PHP Warning:  Undefined variable $pdo in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/login.php on line 18
+[24-Feb-2025 11:38:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/login.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/login.php on line 18
+[24-Feb-2025 11:39:15 UTC] $2y$10$S84PXrLM0X9dNZlrAl5EPehS48Bd6brc5bV4SkI7SejTnK8pREfCm
+[24-Feb-2025 11:39:15 UTC] 34
+[24-Feb-2025 14:34:32 UTC] $2y$10$S84PXrLM0X9dNZlrAl5EPehS48Bd6brc5bV4SkI7SejTnK8pREfCm
+[24-Feb-2025 14:34:32 UTC] 34
+[24-Feb-2025 14:38:35 UTC] $2y$10$S84PXrLM0X9dNZlrAl5EPehS48Bd6brc5bV4SkI7SejTnK8pREfCm
+[24-Feb-2025 14:38:35 UTC] 34
+[24-Feb-2025 14:40:05 UTC] $2y$10$S84PXrLM0X9dNZlrAl5EPehS48Bd6brc5bV4SkI7SejTnK8pREfCm
+[24-Feb-2025 14:40:05 UTC] 34
+[24-Feb-2025 15:06:40 UTC] $2y$10$S84PXrLM0X9dNZlrAl5EPehS48Bd6brc5bV4SkI7SejTnK8pREfCm
+[24-Feb-2025 15:06:40 UTC] 34
+[24-Feb-2025 15:07:43 UTC] $2y$10$DeqIYqhFbIP5TSAZrox47.Hgi2pEBAlsZM.zkGE2u0lbUKV8K1Efm
+[24-Feb-2025 15:07:43 UTC] 17
+[24-Feb-2025 15:07:53 UTC] $2y$10$DeqIYqhFbIP5TSAZrox47.Hgi2pEBAlsZM.zkGE2u0lbUKV8K1Efm
+[24-Feb-2025 15:07:53 UTC] 17
+[24-Feb-2025 15:07:59 UTC] PHP Warning:  Trying to access array offset on false in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/login.php on line 32
+[24-Feb-2025 15:07:59 UTC] 
+[24-Feb-2025 15:07:59 UTC] PHP Warning:  Trying to access array offset on false in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/login.php on line 33
+[24-Feb-2025 15:07:59 UTC] 
+[24-Feb-2025 15:08:08 UTC] $2y$10$DeqIYqhFbIP5TSAZrox47.Hgi2pEBAlsZM.zkGE2u0lbUKV8K1Efm
+[24-Feb-2025 15:08:08 UTC] 17
+[24-Feb-2025 15:08:12 UTC] $2y$10$S84PXrLM0X9dNZlrAl5EPehS48Bd6brc5bV4SkI7SejTnK8pREfCm
+[24-Feb-2025 15:08:12 UTC] 34
+[24-Feb-2025 15:08:25 UTC] $2y$10$S84PXrLM0X9dNZlrAl5EPehS48Bd6brc5bV4SkI7SejTnK8pREfCm
+[24-Feb-2025 15:08:25 UTC] 34
+[24-Feb-2025 15:08:39 UTC] $2y$10$S84PXrLM0X9dNZlrAl5EPehS48Bd6brc5bV4SkI7SejTnK8pREfCm
+[24-Feb-2025 15:08:39 UTC] 34
+[24-Feb-2025 15:13:20 UTC] $2y$10$S84PXrLM0X9dNZlrAl5EPehS48Bd6brc5bV4SkI7SejTnK8pREfCm
+[24-Feb-2025 15:13:20 UTC] 34
+[24-Feb-2025 15:35:21 UTC] DATOS RECIBIDOS
+[24-Feb-2025 15:35:21 UTC] 123456789D
+[24-Feb-2025 15:35:21 UTC] abc123.
+[24-Feb-2025 15:35:21 UTC] alumno
+[24-Feb-2025 15:36:45 UTC] DATOS RECIBIDOS
+[24-Feb-2025 15:36:45 UTC] 123456789D
+[24-Feb-2025 15:36:45 UTC] abc123.
+[24-Feb-2025 15:36:45 UTC] alumno
+[24-Feb-2025 15:54:23 UTC] DATOS RECIBIDOS
+[24-Feb-2025 15:54:23 UTC] 123456789D
+[24-Feb-2025 15:54:23 UTC] alumno
+[24-Feb-2025 15:54:23 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/login.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/login.php on line 44
+[24-Feb-2025 15:54:31 UTC] DATOS RECIBIDOS
+[24-Feb-2025 15:54:31 UTC] 123456789D
+[24-Feb-2025 15:54:31 UTC] alumno
+[24-Feb-2025 15:54:31 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/login.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/login.php on line 44
+[24-Feb-2025 15:57:44 UTC] DATOS RECIBIDOS
+[24-Feb-2025 15:57:44 UTC] 123456789D
+[24-Feb-2025 15:57:44 UTC] alumno
+[24-Feb-2025 15:57:44 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + string in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/login.php:44
+Stack trace:
+#0 {main}
+  thrown in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/login.php on line 44
+[24-Feb-2025 15:58:39 UTC] DATOS RECIBIDOS
+[24-Feb-2025 15:58:39 UTC] 123456789D
+[24-Feb-2025 15:58:39 UTC] alumno
+[24-Feb-2025 15:58:39 UTC] INIT SESSION: 24/02 15:58
+[24-Feb-2025 15:58:39 UTC] 40 123456789D
+[24-Feb-2025 16:03:46 UTC] DATOS RECIBIDOS
+[24-Feb-2025 16:03:46 UTC] 123456789D
+[24-Feb-2025 16:03:46 UTC] alumno
+[24-Feb-2025 16:03:46 UTC] INIT SESSION: 24/02 16:03
+[24-Feb-2025 16:03:46 UTC] 40 123456789D
+[24-Feb-2025 16:21:33 UTC] DATOS RECIBIDOS
+[24-Feb-2025 16:21:33 UTC] 123456789D
+[24-Feb-2025 16:21:33 UTC] alumno
+[24-Feb-2025 16:21:33 UTC] INIT SESSION: 24/02 16:21
+[24-Feb-2025 16:21:33 UTC] 40 123456789D
+[24-Feb-2025 16:26:49 UTC] DATOS RECIBIDOS
+[24-Feb-2025 16:26:49 UTC] 123456789D
+[24-Feb-2025 16:26:49 UTC] alumno
+[24-Feb-2025 16:26:49 UTC] INIT SESSION: 24/02 16:26
+[24-Feb-2025 16:26:49 UTC] 40 123456789D
+[24-Feb-2025 16:34:56 UTC] DATOS RECIBIDOS
+[24-Feb-2025 16:34:56 UTC] 123456789D
+[24-Feb-2025 16:34:56 UTC] alumno
+[24-Feb-2025 16:34:56 UTC] INIT SESSION: 24/02 16:34
+[24-Feb-2025 16:34:56 UTC] 40 123456789D
+[24-Feb-2025 16:37:02 UTC] DATOS RECIBIDOS
+[24-Feb-2025 16:37:02 UTC] 
+[24-Feb-2025 16:37:02 UTC] alumno
+[24-Feb-2025 16:37:02 UTC] INIT SESSION: 24/02 16:37
+[24-Feb-2025 16:37:02 UTC] 17 
+[24-Feb-2025 16:37:07 UTC] DATOS RECIBIDOS
+[24-Feb-2025 16:37:07 UTC] 123456789D
+[24-Feb-2025 16:37:07 UTC] alumno
+[24-Feb-2025 16:37:07 UTC] INIT SESSION: 24/02 16:37
+[24-Feb-2025 16:37:07 UTC] 40 123456789D
+[24-Feb-2025 16:38:08 UTC] DATOS RECIBIDOS
+[24-Feb-2025 16:38:08 UTC] 123456789D
+[24-Feb-2025 16:38:08 UTC] profesor
+[24-Feb-2025 16:38:08 UTC] INIT SESSION: 24/02 16:38
+[24-Feb-2025 16:38:08 UTC] 7 123456789D
+[24-Feb-2025 16:39:39 UTC] DATOS RECIBIDOS
+[24-Feb-2025 16:39:39 UTC] 123456789D
+[24-Feb-2025 16:39:39 UTC] profesor
+[24-Feb-2025 16:39:39 UTC] INIT SESSION: 24/02 16:39
+[24-Feb-2025 16:39:39 UTC] 7 123456789D
+[24-Feb-2025 16:41:32 UTC] DATOS RECIBIDOS
+[24-Feb-2025 16:41:32 UTC] 123456789D
+[24-Feb-2025 16:41:32 UTC] alumno
+[24-Feb-2025 16:41:32 UTC] INIT SESSION: 24/02 16:41
+[24-Feb-2025 16:41:32 UTC] 40 123456789D

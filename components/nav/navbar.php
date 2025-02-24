@@ -49,7 +49,7 @@
       <div class="d-flex justified">
         <!-- <input class="form-control me-2" type="text" placeholder="Search"> -->
         <button id="registro" onclick="goToNewPage('../src/register.php')" class="btn btn-primary me-2" type="button">Registrarse</button>
-		    <button id="login" onclick="goToNewPage('../src/login.php')" class="btn btn-primary" type="button">Log In</button>
+		    <button id="login" onclick="goToNewPage('../src/login2.php')" class="btn btn-primary" type="button">Log In</button>
 		</div>
     </div>
   </div>

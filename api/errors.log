@@ -1,0 +1,7 @@
+[24-Feb-2025 11:38:20 UTC] PHP Warning:  Undefined variable $pdo in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/login.php on line 18
+[24-Feb-2025 11:38:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/login.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/login.php on line 18
+[24-Feb-2025 11:39:15 UTC] $2y$10$S84PXrLM0X9dNZlrAl5EPehS48Bd6brc5bV4SkI7SejTnK8pREfCm
+[24-Feb-2025 11:39:15 UTC] 34

@@ -25,3 +25,4 @@ registerForm.addEventListener('submit', async (event) => {
     const result = await response.json();
     alert(result.message || result.error);
 });
+

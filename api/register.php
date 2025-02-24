@@ -10,6 +10,7 @@ $DNI = $data['DNI'];
 $userType = $data['userType'];
 $password = password_hash($data['password'], PASSWORD_DEFAULT);
 
+
 $message = null;
 $error = null;
 
@@ -37,6 +38,7 @@ else if($userType == "Alumno"){
         $stmt->execute([$DNI]);
         $validDNI = $stmt->fetchAll(PDO::FETCH_ASSOC);
     } catch (Exception $e) {
+      
         $error = "Error al ejecutar SELECT";
     }
     if(!empty($validDNI)){
@@ -49,12 +51,14 @@ else if($userType == "Alumno"){
 }
 else {
     $error = "Error al crear la SQL (Ni alumno ni profesor)";
+
 }
 
 $stmt = $pdo->prepare($sql);
 
 try {
     $stmt->execute([$nombre, $apellido, $DNI, $password]);
+
     $message = "Usuario creado con éxito";
     if(!empty($error))
         echo json_encode(["error" => "$error"]);
@@ -65,5 +69,6 @@ try {
         echo json_encode(["error" => "$error"]);
     else
         echo json_encode(["error" => "Error al registrar el usuario: " . $e->getMessage()]);
+
 }
 ?>

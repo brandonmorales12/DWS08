@@ -23,3 +23,12 @@ Content-Type: application/json
     "name": "maria",
     "password": "12345"
 }
+
+###post
+POST http://localhost:8000/api/login.php
+Content-Type: application/json
+{
+    "DNI": "maria",
+    "password": "12345",
+    "userType": "alumno"
+}

@@ -10,6 +10,9 @@ $DNI = $data['DNI'];
 $userType = $data['userType'];
 $password = password_hash($data['password'], PASSWORD_DEFAULT);
 
+$message = null;
+$error = null;
+
 if($userType == "Profesor"){
     $sql = "SELECT * FROM profesores WHERE DNI = ?";
     $stmt = $pdo->prepare($sql);
@@ -17,38 +20,50 @@ if($userType == "Profesor"){
         $stmt->execute([$DNI]);
         $validDNI = $stmt->fetchAll(PDO::FETCH_ASSOC);
     } catch (Exception $e) {
-        echo json_encode(["error" => "Error al registrar el usuario: " . $e->getMessage()]);
+        $error = "Error al ejecutar SELECT";
     }
     if(!empty($validDNI)){
-        echo json_encode(["error" => "DNI ya registrado"]);
+        $error = "DNI ya registrado.";
     }
-    
-    $sql = "INSERT INTO profesores (nombre, apellido, DNI, password) VALUES (?, ?, ?, ?)";
+    else{
+        $sql = "INSERT INTO profesores (nombre, apellido, DNI, password) VALUES (?, ?, ?, ?)";
+    }
 }
 else if($userType == "Alumno"){
+    
     $sql = "SELECT * FROM alumnos WHERE DNI = ?";
     $stmt = $pdo->prepare($sql);
     try {
         $stmt->execute([$DNI]);
         $validDNI = $stmt->fetchAll(PDO::FETCH_ASSOC);
     } catch (Exception $e) {
-        echo json_encode(["error" => "Error al registrar el usuario: " . $e->getMessage()]);
+        $error = "Error al ejecutar SELECT";
     }
     if(!empty($validDNI)){
-        echo json_encode(["error" => "DNI ya registrado"]);
+        $error = "DNI ya registrado.";
     }
-    $sql = "INSERT INTO alumnos (nombre, apellido, DNI, password) VALUES (?, ?, ?, ?)";
+    else{
+        $sql = "INSERT INTO alumnos (nombre, apellido, DNI, password) VALUES (?, ?, ?, ?)";
+    }
+    
 }
 else {
-    echo json_encode(["message" => "ERROR EN LA SQL"]);
+    $error = "Error al crear la SQL (Ni alumno ni profesor)";
 }
 
 $stmt = $pdo->prepare($sql);
 
 try {
     $stmt->execute([$nombre, $apellido, $DNI, $password]);
-    echo json_encode(["message" => "Registrado con éxito"]);
+    $message = "Usuario creado con éxito";
+    if(!empty($error))
+        echo json_encode(["error" => "$error"]);
+    else
+        echo json_encode(["message" => "$message"]);
 } catch (Exception $e) {
-    echo json_encode(["error" => "Error al registrar el usuario: " . $e->getMessage()]);
+    if(!empty($error))
+        echo json_encode(["error" => "$error"]);
+    else
+        echo json_encode(["error" => "Error al registrar el usuario: " . $e->getMessage()]);
 }
 ?>

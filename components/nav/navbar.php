@@ -12,18 +12,18 @@
     <div class="collapse navbar-collapse" id="mynavbar">
       <!-- Lo que muestra si alumno -->  
       <div id="navbar-alumno" class="navbar-alumno navbar-nav me-auto">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
+    <ul class="navbar-nav me-auto">
+        <li class="nav-item">
             <a class="nav-link" href="javascript:goToNewPage('../src/alumno.php');">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0);">Mis faltas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0);">Mis profesores</a>
-          </li>
-        </ul>
-      </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="javascript:goToNewPage('../src/alumnoFaltas.php');">Mis faltas</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="javascript:goToNewPage('../src/alumnoProfesor.php');">Mis profesores</a>
+        </li>
+    </ul>
+</div>
       <!-- Lo que muestra si profesor -->
       <div id="navbar-profesor" class="navbar-nav me-auto">
         <ul class="navbar-nav me-auto">

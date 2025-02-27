@@ -3,20 +3,21 @@ session_start();
 include '../includes/dbconfig.php';
 
 $data = json_decode(file_get_contents("php://input"), true);
-$usuario = $data['usuario'];
+$dni = $data['dni'];
 $password = $data['password'];
-$rol = $data['rol'];
+$role = $data['role']; 
 
-$sql = "SELECT * FROM users WHERE usuario = ?";
+$sql = "SELECT * FROM users WHERE dni = ? AND rol = ?";
 $stmt = $pdo->prepare($sql);
-$stmt->execute([$usuario]);
+$stmt->execute([$dni, $role]);
 $user = $stmt->fetch();
 
 if ($user && password_verify($password, $user['password'])) {
     $_SESSION['user_id'] = $user['id'];
-    $_SESSION['rol'] = $rol;
-    echo json_encode(["message" => "Login exitoso", "rol" => $rol]);
+    $_SESSION['rol'] = $user['rol'];
+    setcookie("user_role", $user['rol'], time() + 86400, "/"); // Cookie válida por 1 día
+    echo json_encode(["message" => "Login exitoso", "rol" => $user['rol']]);
 } else {
-    echo json_encode(["error" => "Usuario o contraseña incorrectos"]);
+    echo json_encode(["error" => "DNI, contraseña o rol incorrectos"]);
 }
 ?>

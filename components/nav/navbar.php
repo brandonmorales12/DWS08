@@ -31,10 +31,10 @@
             <a class="nav-link" href="javascript:goToNewPage('../src/profesor.php');">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0);">Mis asignaturas</a>
+            <a class="nav-link" href="javascript:goToNewPage('../src/misAsignaturas.php');">Mis asignaturas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0);">Mis alumnos</a>
+            <a class="nav-link" href="javascript:goToNewPage('../src/misAlumnos.php');">Mis alumnos</a>
           </li>
         </ul>
       </div>

@@ -8,17 +8,17 @@
     </div>
     <!-- columna central -->
     <div class="centertext col-8 text-left h-auto"> 
-      <h1>Bienvenido a Raíces</h1>
-      <p>Para Profesores 👨‍🏫 </p>
-      <p> -si eres Profesor puedes acceder a toda la informacion de tus alumnos de forma rapida y sencilla<br>
-      -Revisar la lista de alumnos asignados <br>
-      -Consultarlas materias que impartes<br>
-      -Ver tu horario de clases  
-    </p>
+    <div class="card shadow p-4">
+                <h3 class="text-secondary">Lista de asignaturas</h3>
+                <ul id="asignaturasContainer" class="list-group p-4">
+                    <!-- Asignaturas dinámicamente cargadas aquí -->
+                </ul>
+            </div>
     </div>
     <!-- columna derecha -->
     <div class="col-2 sidetext h-auto">
     </div>
-
   </div>
+  <script src="/components/profesor/asignaturas.js"></script>
+  <script>loadAsignaturas();</script> 
 </div>

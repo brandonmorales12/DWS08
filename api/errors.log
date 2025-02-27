@@ -130,3 +130,72 @@ Stack trace:
 [24-Feb-2025 17:09:45 UTC] alumno
 [24-Feb-2025 17:09:45 UTC] INIT SESSION: 24/02 17:09
 [24-Feb-2025 17:09:45 UTC] 40 123456789D
+[26-Feb-2025 14:40:07 UTC] DATOS RECIBIDOS
+[26-Feb-2025 14:40:07 UTC] 123456789D
+[26-Feb-2025 14:40:07 UTC] profesor
+[26-Feb-2025 14:40:07 UTC] INIT SESSION: 26/02 14:40
+[26-Feb-2025 14:40:07 UTC] 7 123456789D
+[26-Feb-2025 15:38:52 UTC] DATOS RECIBIDOS
+[26-Feb-2025 15:38:52 UTC] PHP Warning:  Trying to access array offset on null in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 15
+[26-Feb-2025 15:38:52 UTC] 
+[26-Feb-2025 15:38:52 UTC] PHP Warning:  Trying to access array offset on null in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 16
+[26-Feb-2025 15:38:52 UTC] 
+[26-Feb-2025 15:39:39 UTC] DATOS RECIBIDOS
+[26-Feb-2025 15:39:39 UTC] PHP Warning:  Trying to access array offset on null in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 15
+[26-Feb-2025 15:39:39 UTC] 
+[26-Feb-2025 15:39:39 UTC] PHP Warning:  Trying to access array offset on null in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 16
+[26-Feb-2025 15:39:39 UTC] 
+[26-Feb-2025 15:40:50 UTC] DATOS RECIBIDOS
+[26-Feb-2025 15:40:50 UTC] PHP Warning:  Trying to access array offset on null in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 15
+[26-Feb-2025 15:40:50 UTC] 
+[26-Feb-2025 15:40:50 UTC] PHP Warning:  Trying to access array offset on null in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 16
+[26-Feb-2025 15:40:50 UTC] 
+[26-Feb-2025 15:44:31 UTC] 
+[26-Feb-2025 15:45:00 UTC] 
+[26-Feb-2025 15:53:20 UTC] DATOS RECIBIDOS
+[26-Feb-2025 15:55:26 UTC] DATOS RECIBIDOS
+[26-Feb-2025 15:55:26 UTC] 123456789D
+[26-Feb-2025 15:55:26 UTC] profesor
+[26-Feb-2025 15:55:26 UTC] INIT SESSION: 26/02 15:55
+[26-Feb-2025 15:55:26 UTC] 7 123456789D
+[26-Feb-2025 15:55:26 UTC] SESION INICIADA PARA: 7
+[26-Feb-2025 15:56:40 UTC] DATOS RECIBIDOS: 
+[26-Feb-2025 15:56:40 UTC] PHP Warning:  Array to string conversion in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 16
+[26-Feb-2025 15:56:40 UTC] DATOS RECIBIDOS: Array
+[26-Feb-2025 15:57:11 UTC] DATOS RECIBIDOS: 
+[26-Feb-2025 15:57:11 UTC] PHP Warning:  Array to string conversion in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 16
+[26-Feb-2025 15:57:11 UTC] DATOS RECIBIDOS: Array
+[26-Feb-2025 16:02:16 UTC] DATOS RECIBIDOS: 
+[26-Feb-2025 16:02:16 UTC] PHP Warning:  Array to string conversion in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 16
+[26-Feb-2025 16:02:16 UTC] DATOS RECIBIDOS: Array
+[26-Feb-2025 16:02:22 UTC] PHP Warning:  Array to string conversion in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 16
+[26-Feb-2025 16:02:22 UTC] DATOS RECIBIDOS: Array
+[26-Feb-2025 16:02:22 UTC] PHP Warning:  Undefined variable $id in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 56
+[26-Feb-2025 16:02:57 UTC] DATOS RECIBIDOS: 
+[26-Feb-2025 16:02:57 UTC] PHP Warning:  Array to string conversion in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 16
+[26-Feb-2025 16:02:57 UTC] DATOS RECIBIDOS: Array
+[26-Feb-2025 16:02:59 UTC] PHP Warning:  Array to string conversion in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 16
+[26-Feb-2025 16:02:59 UTC] DATOS RECIBIDOS: Array
+[26-Feb-2025 16:04:49 UTC] DATOS RECIBIDOS: null
+[26-Feb-2025 16:04:49 UTC] DATOS RECIBIDOS: {"id_profesor":"7"}
+[26-Feb-2025 16:04:51 UTC] DATOS RECIBIDOS: {"id_profesor":7,"id_asignatura":1}
+[26-Feb-2025 16:06:53 UTC] [GET] DATOS RECIBIDOS: null
+[26-Feb-2025 16:06:53 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[26-Feb-2025 16:06:56 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"1"}
+[26-Feb-2025 16:07:23 UTC] [GET] DATOS RECIBIDOS: null
+[26-Feb-2025 16:07:23 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[26-Feb-2025 16:12:12 UTC] [GET] DATOS RECIBIDOS: null
+[26-Feb-2025 16:12:12 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[26-Feb-2025 16:12:13 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"1"}
+[26-Feb-2025 16:12:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id_asignatura' in 'field list' in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php:78
+Stack trace:
+#0 /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php(78): PDOStatement->execute()
+#1 {main}
+  thrown in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 78
+[26-Feb-2025 16:14:05 UTC] [GET] DATOS RECIBIDOS: null
+[26-Feb-2025 16:14:05 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[26-Feb-2025 16:14:06 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"1"}
+[26-Feb-2025 16:17:57 UTC] [GET] DATOS RECIBIDOS: null
+[26-Feb-2025 16:17:57 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[26-Feb-2025 16:18:03 UTC] [GET] DATOS RECIBIDOS: null
+[26-Feb-2025 16:18:03 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}

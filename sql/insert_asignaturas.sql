@@ -14,3 +14,4 @@ VALUES ('Historia', '3H por Semana');
 
 INSERT INTO asignaturas (nombre, num_horas)
 VALUES ('Física', '5H por Semana'); 
+

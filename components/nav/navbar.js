@@ -22,10 +22,10 @@ function topFunction() {
   }
 
 function navbarChanges(active) {
-    console.log("CAMBIANDO NAVBAR");
+    //console.log("CAMBIANDO NAVBAR");
     //console.log(navbar_auth);
-    console.log(navbar_logout);
-    console.log(active);
+    //console.log(navbar_logout);
+    //console.log(active);
 
     if(active == "alumno"){
         navbar_profes.hidden = true;

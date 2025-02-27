@@ -8,10 +8,12 @@
     </div>
     <!-- columna central -->
     <div class="centertext col-8 text-left h-auto">
+
       <h1>Bienvenido, <span id="nombre"></span></h1>
       <p>Apellido: <span id="apellido"></span></p>
       <p>DNI: <span id="dni"></span></p>
     </div>
+
     <div class="col-2 sidetext h-auto">
     </div>
 

@@ -49,7 +49,11 @@ error_log($user['id'] . " " . $DNI);
 
 if ($user && password_verify($password, $user['password'])) {
     $_SESSION['user_id'] = $user['id'];
+    error_log('SESION INICIADA PARA: ' . $_SESSION['user_id']);
     setcookie("tipoUsuario", $userType, time() + 86400, "/"); //One day
+
+    setcookie("user_id", $user['id'], time() + 86400, "/"); //One day
+
     echo json_encode([
         'userId' => $user['id'],
         'nombre' => $user['nombre'],
@@ -57,6 +61,7 @@ if ($user && password_verify($password, $user['password'])) {
         'DNI' => $user['DNI'],
         'message' => 'Inicio de sesión exitoso.'
     ]);
+
 } else {
     echo json_encode(["error" => "Credenciales incorrectas"]);
 }

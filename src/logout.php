@@ -1,17 +1,19 @@
 <?php
 session_start();
-session_destroy();
+
 
 setcookie("tipoUsuario", "", time() - 3600, "/");
+setcookie("user_id", "", time() - 3600, "/");
+
+
 
 echo
 "<script>
-    localStorage.removeItem('userId');
-    localStorage.removeItem('userType');
+    localStorage.clear();
     alert('Sesión cerrada correctamente');
     window.location.replace(\"/src/landing.php\");  
 </script>";
 
-
+session_destroy();
 //Done 21 Ene 2025
 ?>

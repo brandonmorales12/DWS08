@@ -199,3 +199,130 @@ Stack trace:
 [26-Feb-2025 16:17:57 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
 [26-Feb-2025 16:18:03 UTC] [GET] DATOS RECIBIDOS: null
 [26-Feb-2025 16:18:03 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 18:52:07 UTC] DATOS RECIBIDOS
+[27-Feb-2025 18:52:07 UTC] 123456789D
+[27-Feb-2025 18:52:07 UTC] profesor
+[27-Feb-2025 18:52:07 UTC] INIT SESSION: 27/02 18:52
+[27-Feb-2025 18:52:07 UTC] 7 123456789D
+[27-Feb-2025 18:52:07 UTC] SESION INICIADA PARA: 7
+[27-Feb-2025 18:52:39 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 18:52:39 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 18:52:43 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"1"}
+[27-Feb-2025 18:52:43 UTC] PHP Warning:  Array to string conversion in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 71
+[27-Feb-2025 18:52:43 UTC] 0 => Array
+[27-Feb-2025 18:55:44 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 18:55:44 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 18:55:45 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"1"}
+[27-Feb-2025 18:55:45 UTC] PHP Warning:  Array to string conversion in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 71
+[27-Feb-2025 18:55:45 UTC] 0 => Array
+[27-Feb-2025 18:56:49 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"2"}
+[27-Feb-2025 18:56:49 UTC] PHP Warning:  Array to string conversion in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 71
+[27-Feb-2025 18:56:49 UTC] 0 => Array
+[27-Feb-2025 18:56:57 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"3"}
+[27-Feb-2025 18:56:57 UTC] PHP Warning:  Array to string conversion in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 71
+[27-Feb-2025 18:56:57 UTC] 0 => Array
+[27-Feb-2025 19:00:09 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:00:09 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:00:10 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"1"}
+[27-Feb-2025 19:00:10 UTC] 0 => {"id_asignatura":1,"id_profesor":7}
+[27-Feb-2025 19:00:20 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"2"}
+[27-Feb-2025 19:00:20 UTC] 0 => {"id_asignatura":1,"id_profesor":7}
+[27-Feb-2025 19:01:04 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"4"}
+[27-Feb-2025 19:01:04 UTC] 0 => {"id_asignatura":1,"id_profesor":7}
+[27-Feb-2025 19:12:59 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:12:59 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:13:00 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"4"}
+[27-Feb-2025 19:13:00 UTC] 0 => {"id_asignatura":1,"id_profesor":7}
+[27-Feb-2025 19:13:00 UTC] La asignatura no está en la tabla, introduciendo
+[27-Feb-2025 19:13:07 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"4"}
+[27-Feb-2025 19:13:07 UTC] 0 => {"id_asignatura":1,"id_profesor":7}
+[27-Feb-2025 19:13:07 UTC] La asignatura no está en la tabla, introduciendo
+[27-Feb-2025 19:13:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4-7' for key 'PRIMARY' in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php:86
+Stack trace:
+#0 /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php(86): PDOStatement->execute()
+#1 {main}
+  thrown in /home/jorge/Development/ProyectoPHPTema8/DWS08/api/asignaturas.php on line 86
+[27-Feb-2025 19:16:21 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:16:22 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:16:23 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"4"}
+[27-Feb-2025 19:16:23 UTC] 0 => {"id_asignatura":1,"id_profesor":7}
+[27-Feb-2025 19:16:23 UTC] 1 => {"id_asignatura":4,"id_profesor":7}
+[27-Feb-2025 19:16:23 UTC] La asignatura ya está asignada a este profesor
+[27-Feb-2025 19:16:25 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"1"}
+[27-Feb-2025 19:16:25 UTC] 0 => {"id_asignatura":1,"id_profesor":7}
+[27-Feb-2025 19:16:25 UTC] La asignatura ya está asignada a este profesor
+[27-Feb-2025 19:16:25 UTC] 1 => {"id_asignatura":4,"id_profesor":7}
+[27-Feb-2025 19:16:28 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"2"}
+[27-Feb-2025 19:16:28 UTC] 0 => {"id_asignatura":1,"id_profesor":7}
+[27-Feb-2025 19:16:28 UTC] 1 => {"id_asignatura":4,"id_profesor":7}
+[27-Feb-2025 19:16:28 UTC] La asignatura no está en la tabla, introduciendo
+[27-Feb-2025 19:17:27 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"1"}
+[27-Feb-2025 19:17:27 UTC] 0 => {"id_asignatura":1,"id_profesor":7}
+[27-Feb-2025 19:17:27 UTC] La asignatura ya está asignada a este profesor
+[27-Feb-2025 19:17:27 UTC] 1 => {"id_asignatura":2,"id_profesor":7}
+[27-Feb-2025 19:17:27 UTC] 2 => {"id_asignatura":4,"id_profesor":7}
+[27-Feb-2025 19:18:25 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:18:25 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:19:35 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:19:35 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:21:20 UTC] DATOS RECIBIDOS
+[27-Feb-2025 19:21:20 UTC] 123456789D
+[27-Feb-2025 19:21:20 UTC] profesor
+[27-Feb-2025 19:21:20 UTC] INIT SESSION: 27/02 19:21
+[27-Feb-2025 19:21:20 UTC] 7 123456789D
+[27-Feb-2025 19:21:20 UTC] SESION INICIADA PARA: 7
+[27-Feb-2025 19:21:27 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:21:27 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:21:33 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:21:33 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:23:27 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:23:27 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":null}
+[27-Feb-2025 19:26:25 UTC] DATOS RECIBIDOS
+[27-Feb-2025 19:26:25 UTC] 123456789D
+[27-Feb-2025 19:26:25 UTC] profesor
+[27-Feb-2025 19:26:25 UTC] INIT SESSION: 27/02 19:26
+[27-Feb-2025 19:26:25 UTC] 7 123456789D
+[27-Feb-2025 19:26:25 UTC] SESION INICIADA PARA: 7
+[27-Feb-2025 19:26:28 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:26:28 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:28:32 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:28:32 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:28:53 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:28:53 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:29:16 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:29:16 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:29:19 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"2"}
+[27-Feb-2025 19:29:19 UTC] 0 => {"id_asignatura":1,"id_profesor":7}
+[27-Feb-2025 19:29:19 UTC] 1 => {"id_asignatura":2,"id_profesor":7}
+[27-Feb-2025 19:29:19 UTC] La asignatura ya está asignada a este profesor
+[27-Feb-2025 19:29:19 UTC] 2 => {"id_asignatura":4,"id_profesor":7}
+[27-Feb-2025 19:29:20 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:29:20 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:29:38 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:29:38 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:29:39 UTC] [PUT] DATOS RECIBIDOS: {"id_profesor":"7","id_asignatura":"3"}
+[27-Feb-2025 19:29:39 UTC] 0 => {"id_asignatura":1,"id_profesor":7}
+[27-Feb-2025 19:29:39 UTC] 1 => {"id_asignatura":2,"id_profesor":7}
+[27-Feb-2025 19:29:39 UTC] 2 => {"id_asignatura":4,"id_profesor":7}
+[27-Feb-2025 19:29:39 UTC] La asignatura no está en la tabla, introduciendo
+[27-Feb-2025 19:29:40 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:29:40 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:33:41 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:33:41 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:44:14 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:44:14 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:52:40 UTC] DATOS RECIBIDOS
+[27-Feb-2025 19:52:40 UTC] 
+[27-Feb-2025 19:52:40 UTC] profesor
+[27-Feb-2025 19:52:40 UTC] INIT SESSION: 27/02 19:52
+[27-Feb-2025 19:52:40 UTC] 2 
+[27-Feb-2025 19:52:45 UTC] DATOS RECIBIDOS
+[27-Feb-2025 19:52:45 UTC] 123456789D
+[27-Feb-2025 19:52:45 UTC] profesor
+[27-Feb-2025 19:52:45 UTC] INIT SESSION: 27/02 19:52
+[27-Feb-2025 19:52:45 UTC] 7 123456789D
+[27-Feb-2025 19:52:45 UTC] SESION INICIADA PARA: 7
+[27-Feb-2025 19:52:48 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:52:48 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}
+[27-Feb-2025 19:57:09 UTC] [GET] DATOS RECIBIDOS: null
+[27-Feb-2025 19:57:09 UTC] [POST] DATOS RECIBIDOS: {"id_profesor":"7"}

@@ -8,12 +8,12 @@
     </div>
     <!-- columna central -->
     <div class="centertext col-8 text-left h-auto"> 
-    <div class="card shadow p-4">
-                <h3 class="text-secondary">Lista de asignaturas</h3>
-                <ul id="asignaturasContainer" class="list-group p-4">
-                    <!-- Asignaturas dinámicamente cargadas aquí -->
-                </ul>
-            </div>
+      <div class="card shadow p-4">
+            <h3 class="text-secondary">Lista de asignaturas</h3>
+            <ul id="asignaturasContainer" class="list-group p-4">
+                <!-- Asignaturas dinámicamente cargadas aquí -->
+            </ul>
+      </div>
     </div>
     <!-- columna derecha -->
     <div class="col-2 sidetext h-auto">

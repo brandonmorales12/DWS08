@@ -8,10 +8,47 @@
     </div>
     <!-- columna central -->
     <div class="centertext col-8 text-left h-auto"> 
-      <h1>Mis alumnos</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <hr>
-      <p>Lorem ipsum...</p>
+      <div class="card shadow row p-4">
+          <h3 class="text-secondary">Lista de alumnos</h3>
+          <div id="alumnosContainer" class="list-group p-4 d-flex flex-wrap flex-row">
+              <!-- Asignaturas dinámicamente cargadas aquí -->
+              <div class="card m-4" style="width: 18rem;">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+              </div>
+
+              <div class="card m-4" style="width: 18rem;">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+              </div>
+
+              <div class="card m-4" style="width: 18rem;">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+              </div>
+
+              <div class="card m-4" style="width: 18rem;">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+              </div>
+          </div>
+      </div>
     </div>
     <!-- columna derecha -->
     <div class="col-2 sidetext h-auto">

@@ -26,15 +26,18 @@ async function loadAsignaturas() {
         const li = document.createElement('li');
         let $apuntado = false;
         asignaturas_apuntado.forEach(asignatura_ap => {
-            if(asignatura_ap.id == asignatura.id) 
+            //console.log(JSON.stringify({})); 
+            console.log("id " + asignatura_ap.id_asignatura);
+            // LOG BORRAR
+            if(asignatura_ap.id_asignatura == asignatura.id) 
                 {$apuntado = true; return;}
-            $apuntado = false;
+            //$apuntado = false;
         });
         li.innerHTML = `
             <strong>${asignatura.nombre}</strong> - ${asignatura.num_horas} 
-            [${($apuntado ? 'Enseñando' : '')}]
+            [${($apuntado ? 'Enseñando' : 'N/A')}]
             <button onclick="updateasignatura('${id_profesor}', '${asignatura.id}')">
-                ${$apuntado ? 'Borrarme' : 'Apuntarme'}
+                ${$apuntado ? 'BorradoNF' : 'Apuntarme'}
             </button>
         `;
         asignaturasContainer.appendChild(li);
@@ -60,7 +63,7 @@ async function updateasignatura(id_profesor, id_asignatura){
     const result = await response.json();
     if(result.message || result.error)
         alert(result.message || result.error);
-    loadTasks(); // Recargar las tareas
+    loadAsignaturas(); // Recargar las asignaturas
 }
 
 

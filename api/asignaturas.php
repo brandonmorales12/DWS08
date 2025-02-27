@@ -54,6 +54,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
 
     error_log("[PUT] DATOS RECIBIDOS: " . json_encode($data));
 
+    $error;
+    $mensaje;
 
     $data = json_decode(file_get_contents("php://input"), true);
     $id_profesor = $data['id_profesor'];
@@ -67,22 +69,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     if(!empty($asignaturas_apuntado)){
         // Hay asignaturas con ese profesor
         // Aquí hay que ver si la asig ya está en la tabla o no y asignar o borrar en función.
-        foreach ($asignaturas_apuntado as $key => $value) {
-            error_log($key . " => " . $value);
+        $flag = false;
+        foreach ($asignaturas_apuntado as $key => $asignatura_ap) {
+            error_log(json_encode($key) . " => " . json_encode($asignatura_ap));
+            if($id_asignatura == $asignatura_ap["id_asignatura"])
+            {
+                //La asignatura está en la tabla asignaturas así que nada
+                error_log("La asignatura ya está asignada a este profesor");
+                $mensaje = "La asignatura ya está asignada.";
+                $flag = true;
+                //Aquí habría que borrar, upgradear o algo
+            }
+        }
+        if(!($flag)) {
+            error_log("La asignatura no está en la tabla, introduciendo");
+            $mensaje = "Apuntado con éxito.";
+            $sql = "INSERT INTO profesores_asignaturas (id_asignatura, id_profesor) VALUES (?, ?)";
+            $stmt = $pdo->prepare($sql);
+            $stmt->execute([$id_asignatura, $id_profesor]);
+            $mensaje = "Apuntado con éxito.";
         }
     }
     else {
         // El profesor no tiene NINGUNA asignatura en la tabla relacional
+        // Quizá un refactor aquí estaría bien?? Da error si no tiene ninguna
         $sql = "INSERT INTO profesores_asignaturas (id_asignatura, id_profesor) VALUES (?, ?)";
         $stmt = $pdo->prepare($sql);
         $stmt->execute([$id_asignatura, $id_profesor]);
-        echo json_encode(["message" => "Apuntado con éxito."]);
+        $mensaje = "Apuntado con éxito.";
     }
 
-    // $sql = "UPDATE tasks SET status = ? WHERE id = ? AND user_id = ?";
-    // $stmt = $pdo->prepare($sql);
-    // $stmt->execute([$status, $id, $user_id]);
-    // echo json_encode(["message" => "Estado de la tarea actualizado"]);
+    echo json_encode(["message" => $mensaje]);
 }
 
 //N/A DELETE NI CREATE PORQUE LO HACE ADMINISTRADOR

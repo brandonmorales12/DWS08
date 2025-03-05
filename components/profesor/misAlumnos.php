@@ -13,38 +13,38 @@
           <div id="alumnosContainer" class="list-group p-4 d-flex flex-wrap flex-row">
               <!-- Asignaturas dinámicamente cargadas aquí -->
               <div class="card m-4" style="width: 18rem;">
-              <img class="card-img-top" src="..." alt="Card image cap">
+              <img class="card-img-top" src="../assets/usuario.png" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">Alumno 0</h5>
+                <p class="card-text">Ejemplo de faltas.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
               </div>
 
               <div class="card m-4" style="width: 18rem;">
-              <img class="card-img-top" src="..." alt="Card image cap">
+              <img class="card-img-top" src="../assets/usuario.png" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Alumno 1</h5>
+                <p class="card-text">O descripcion.</p>
+                <a href="#" class="btn btn-primary">Añadir</a>
               </div>
               </div>
 
               <div class="card m-4" style="width: 18rem;">
-              <img class="card-img-top" src="..." alt="Card image cap">
+              <img class="card-img-top" src="../assets/usuario.png" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Alumno 2</h5>
+                <p class="card-text">O cualquier otra cosa.</p>
+                <a href="#" class="btn btn-primary">Añadir</a>
               </div>
               </div>
 
               <div class="card m-4" style="width: 18rem;">
-              <img class="card-img-top" src="..." alt="Card image cap">
+              <img class="card-img-top" src="../assets/usuario.png" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title">Alumno 3</h5>
+                <p class="card-text">Ejemplo de alumno 1.</p>
+                <a href="#" class="btn btn-primary">Añadir</a>
               </div>
               </div>
           </div>
